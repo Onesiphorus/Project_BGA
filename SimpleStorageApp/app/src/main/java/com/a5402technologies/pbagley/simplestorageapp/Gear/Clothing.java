@@ -2,14 +2,14 @@ package com.a5402technologies.pbagley.simplestorageapp.Gear;
 
 public class Clothing extends GearBase {
 
-    private Boolean face;
-    private Boolean hat;
-    private Boolean shoulders;
-    private Boolean torso;
-    private Boolean gloves;
-    private Boolean pants;
-    private Boolean boots;
-    private Boolean coat;
+    private Boolean face = false;
+    private Boolean hat = false;
+    private Boolean shoulders = false;
+    private Boolean torso = false;
+    private Boolean gloves = false;
+    private Boolean pants = false;
+    private Boolean boots = false;
+    private Boolean coat = false;
 
     Clothing(String name) {
         super(name);

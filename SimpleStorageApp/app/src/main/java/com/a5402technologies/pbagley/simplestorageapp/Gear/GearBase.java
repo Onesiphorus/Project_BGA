@@ -4,20 +4,20 @@ import java.util.List;
 
 public class GearBase {
     private String name;
-    private Integer cost;
-    private Integer sell;
-    private Integer weight;
-    private Integer darkStone;
-    private Integer agilityBonus;
-    private Integer cunningBonus;
-    private Integer spiritBonus;
-    private Integer strengthBonus;
-    private Integer loreBonus;
-    private Integer luckBonus;
-    private Integer healthBonus;
-    private Integer sanityBonus;
-    private Integer initiativeBonus;
-    private List<String> restrictions;
+    private Integer cost = 0;
+    private Integer sell = 0;
+    private Integer weight = 0;
+    private Integer darkStone = 0;
+    private Integer agilityBonus = 0;
+    private Integer cunningBonus = 0;
+    private Integer spiritBonus = 0;
+    private Integer strengthBonus = 0;
+    private Integer loreBonus = 0;
+    private Integer luckBonus = 0;
+    private Integer healthBonus = 0;
+    private Integer sanityBonus = 0;
+    private Integer initiativeBonus = 0;
+    private List<String> restrictions = null;
 
     public GearBase(String name) {
         this.name = name;

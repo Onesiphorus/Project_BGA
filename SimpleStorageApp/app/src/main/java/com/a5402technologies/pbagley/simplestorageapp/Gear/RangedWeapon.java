@@ -1,11 +1,11 @@
 package com.a5402technologies.pbagley.simplestorageapp.Gear;
 
 public class RangedWeapon extends GearBase {
-    private Integer damageDie;
-    private Integer damageBonus;
-    private Integer shots;
-    private Integer range;
-    private Boolean twoHanded;
+    private Integer damageDie = 6;
+    private Integer damageBonus = 0;
+    private Integer shots = 0;
+    private Integer range = 0;
+    private Boolean twoHanded = false;
 
     public RangedWeapon(String name) {
         super(name);

@@ -1,10 +1,10 @@
 package com.a5402technologies.pbagley.simplestorageapp.Gear;
 
 public class MeleeWeapon extends GearBase {
-    private Integer combat;
-    private Integer damageBonus;
-    private Integer damageDie;
-    private Boolean twoHanded;
+    private Integer combat = 0;
+    private Integer damageBonus = 0;
+    private Integer damageDie = 6;
+    private Boolean twoHanded = false;
 
     public MeleeWeapon(String name) {
         super(name);

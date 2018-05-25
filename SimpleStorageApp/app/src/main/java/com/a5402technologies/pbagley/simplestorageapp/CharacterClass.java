@@ -18,13 +18,14 @@ public class CharacterClass {
     private Integer MeleeToHit;
     private Integer Combat;
     private Integer Initiative;
+    private Integer MaxGrit;
 
     CharacterClass() {}
 
     public CharacterClass(String className, Integer agility, Integer cunning, Integer spirit,
                           Integer strength, Integer lore, Integer luck, Integer health,
                           Integer sanity, Integer defense, Integer willpower, Integer rangedToHit,
-                          Integer meleeToHit, Integer combat, Integer initiative)
+                          Integer meleeToHit, Integer combat, Integer initiative, Integer maxGrit)
     {
         this.className = className;
         Agility = agility;
@@ -41,6 +42,7 @@ public class CharacterClass {
         MeleeToHit = meleeToHit;
         Combat = combat;
         Initiative = initiative;
+        MaxGrit = maxGrit;
     }
 
     public String getClassName() {

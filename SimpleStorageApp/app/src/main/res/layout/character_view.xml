@@ -3,337 +3,348 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_name_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="0"
+                android:gravity="start"/>
 
-    <TextView
-        android:id="@+id/tv_name_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/tv_class_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:layout_weight="0"/>
 
-    <TextView
-        android:id="@+id/tv_class_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Class"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
 
-    <TextView
-        android:id="@+id/tv_class"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/tv_init_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initiative"
+                android:layout_weight="0" />
+            <TextView
+                android:id="@+id/tv_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_init_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Initiative"
-        tools:layout_editor_absoluteX="398dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/tv_init"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/tv_agility_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agility"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_agility_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agility"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="52dp" />
+            <TextView
+                android:id="@+id/tv_agility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_agility"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="52dp" />
+            <TextView
+                android:id="@+id/tv_cunning_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cunning"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_cunning_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cunning"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="52dp" />
+            <TextView
+                android:id="@+id/tv_cunning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
 
-    <TextView
-        android:id="@+id/tv_cunning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="52dp" />
+            <TextView
+                android:id="@+id/tv_spirit_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spirit"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_spirit_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spirit"
-        tools:layout_editor_absoluteX="398dp"
-        tools:layout_editor_absoluteY="52dp" />
+            <TextView
+                android:id="@+id/tv_spirit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_spirit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="52dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_strength_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strength"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_strength_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Strength"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp" />
+            <TextView
+                android:id="@+id/tv_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_strength"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="71dp" />
+            <TextView
+                android:id="@+id/tv_lore_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lore"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_lore_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lore"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="71dp" />
+            <TextView
+                android:id="@+id/tv_lore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_lore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="71dp" />
+            <TextView
+                android:id="@+id/tv_luck_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luck"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_luck_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Luck"
-        tools:layout_editor_absoluteX="398dp"
-        tools:layout_editor_absoluteY="71dp" />
+            <TextView
+                android:id="@+id/tv_luck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_luck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="71dp" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_health_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Health"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="90dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/tv_health"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="90dp" />
+            <TextView
+                android:id="@+id/tv_health_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:layout_weight="0"/>
 
-    <TextView
-        android:id="@+id/tv_defense_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Defense"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="90dp" />
+            <TextView
+                android:id="@+id/tv_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_defense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="90dp" />
+            <TextView
+                android:id="@+id/tv_defense_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defense"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_armor_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Armor"
-        tools:layout_editor_absoluteX="398dp"
-        tools:layout_editor_absoluteY="90dp" />
+            <TextView
+                android:id="@+id/tv_defense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_armor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="90dp" />
+            <TextView
+                android:id="@+id/tv_armor_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Armor"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_sanity_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sanity"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_armor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_sanity_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sanity"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_sanity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_sanity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_willpower_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Willpower"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_willpower_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Willpower"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_willpower"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_willpower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_spiritarmor_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SpArmor"
-        tools:layout_editor_absoluteX="398dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_spiritarmor_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpArmor"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_sparmor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="109dp" />
+            <TextView
+                android:id="@+id/tv_sparmor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_ranged_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ranged"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_ranged_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ranged"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="128dp" />
+            <TextView
+                android:id="@+id/tv_ranged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_ranged"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="128dp" />
+            <TextView
+                android:id="@+id/tv_shots_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shots"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_shots_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shots"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="128dp" />
+            <TextView
+                android:id="@+id/tv_shots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_shots"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="128dp" />
+            <TextView
+                android:id="@+id/tv_melee_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Melee"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_melee_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Melee"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="147dp" />
+            <TextView
+                android:id="@+id/tv_melee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_melee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="147dp" />
+            <TextView
+                android:id="@+id/tv_combat_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combat"
+                android:layout_weight="0" />
 
-    <TextView
-        android:id="@+id/tv_combat_tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Combat"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="147dp" />
+            <TextView
+                android:id="@+id/tv_combat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_equip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equip"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/tv_combat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="147dp" />
+            <Button
+                android:id="@+id/btn_weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weapons"
+                android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/btn_equip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Equip"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="222dp" />
+            <Button
+                android:id="@+id/btn_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="223dp" />
 
-    <Button
-        android:id="@+id/btn_weapons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weapons"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="222dp" />
+            <Button
+                android:id="@+id/btn_sidebag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Side Bag"
+                android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/btn_items"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Items"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="223dp" />
+            <Button
+                android:id="@+id/btn_effects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Effects"
+                android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/btn_sidebag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Side Bag"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="222dp" />
-
-    <Button
-        android:id="@+id/btn_effects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Effects"
-        tools:layout_editor_absoluteX="367dp"
-        tools:layout_editor_absoluteY="222dp" />
-
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="<-"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="222dp" />
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<-"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

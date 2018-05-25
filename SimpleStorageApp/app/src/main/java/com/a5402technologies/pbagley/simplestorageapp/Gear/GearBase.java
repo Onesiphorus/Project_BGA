@@ -1,8 +1,8 @@
-package com.a5402technologies.pbagley.simplestorageapp;
+package com.a5402technologies.pbagley.simplestorageapp.Gear;
 
 import java.util.List;
 
-public class ItemBase {
+public class GearBase {
     private String name;
     private Integer cost;
     private Integer sell;
@@ -19,7 +19,7 @@ public class ItemBase {
     private Integer initiativeBonus;
     private List<String> restrictions;
 
-    public ItemBase(String name) {
+    public GearBase(String name) {
         this.name = name;
     }
 

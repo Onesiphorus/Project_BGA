@@ -1,12 +1,12 @@
 package com.a5402technologies.pbagley.simplestorageapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import com.a5402technologies.pbagley.simplestorageapp.CharacterClass;
 
 public class MainActivity extends AppCompatActivity {
     String msg = "Android : ";
@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                         Integer.parseInt(((EditText)findViewById(R.id.et_combat)).getText().toString()),
                         Integer.parseInt(((EditText)findViewById(R.id.et_init)).getText().toString()),
                         Integer.parseInt(((EditText)findViewById(R.id.et_max_grit)).getText().toString()));
+                SaveState.ccs.add(characterClass);
+                SaveState.saveData(SaveState.getInstance());
+                SaveState save = SaveState.loadData();
                 setContentView(R.layout.character_view);
             }
         });

@@ -322,8 +322,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Items"
-                tools:layout_editor_absoluteX="192dp"
-                tools:layout_editor_absoluteY="223dp" />
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_sidebag"
@@ -343,7 +342,7 @@
                 android:id="@+id/btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="<-"
+                android:text="Back"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>

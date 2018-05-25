@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     String msg = "Android : ";
@@ -19,43 +18,14 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_create = findViewById(R.id.btn_create);
         btn_create.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setContentView(R.layout.create_menu);
+                Intent CreateMenuActivity = new Intent(v.getContext(), CreateMenuActivity.class);
+                startActivity(CreateMenuActivity);
             }
         });
 
-        final Button btn_new_class = findViewById(R.id.btn_new_class);
-        btn_new_class.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                setContentView(R.layout.new_class);
-            }
-        });
 
-        final Button btn_done = findViewById(R.id.btn_done);
-        btn_done.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                CharacterClass characterClass = new CharacterClass(
-                        ((EditText)findViewById(R.id.et_class_name)).getText().toString(),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_agility)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_cunning)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_spirit)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_strength)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_lore)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_luck)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_health)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_defense)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_sanity)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_willpower)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_ranged)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_melee)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_combat)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_init)).getText().toString()),
-                        Integer.parseInt(((EditText)findViewById(R.id.et_max_grit)).getText().toString()));
-                SaveState.ccs.add(characterClass);
-                SaveState.saveData(SaveState.getInstance());
-                SaveState save = SaveState.loadData();
-                setContentView(R.layout.character_view);
-            }
-        });
+
+
     }
     @Override
     protected void onStart() {

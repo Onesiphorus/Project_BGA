@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CreateMenuActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.a5402technologies.pbagley.simplestorageapp.MainActivity" />
+        </activity>
+        <activity android:name=".NewClassActivity" />
+        <activity android:name=".CharacterActivity" />
+        <activity android:name=".GearActivity"></activity>
     </application>
 
 </manifest>

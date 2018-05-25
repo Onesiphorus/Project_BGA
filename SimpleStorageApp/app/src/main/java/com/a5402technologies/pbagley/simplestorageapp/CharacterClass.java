@@ -1,8 +1,9 @@
 package com.a5402technologies.pbagley.simplestorageapp;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class CharacterClass {
+public class CharacterClass implements Serializable {
     private String className;
     private Integer Agility;
     private Integer Cunning;

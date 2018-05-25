@@ -7,12 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="6">
+        android:weightSum="7">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="6"
+            android:weightSum="7"
             android:layout_weight="1">
             <TextView
                 android:id="@+id/tv_name_tag"
@@ -49,6 +49,17 @@
                 android:layout_weight="0" />
             <TextView
                 android:id="@+id/tv_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tv_max_grit_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Grit"
+                android:layout_weight="0"/>
+            <TextView
+                android:id="@+id/tv_max_grit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -243,13 +254,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="4"
+            android:weightSum="6"
             android:layout_weight="1">
             <TextView
                 android:id="@+id/tv_ranged_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ranged"
+                android:text="Ranged to Hit"
                 android:layout_weight="0" />
 
             <TextView
@@ -257,25 +268,95 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_shots_tag"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shots"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="0">
+                <TextView
+                    android:id="@+id/tv_shots1_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shots"
+                    android:layout_weight="0" />
 
-            <TextView
-                android:id="@+id/tv_shots"
+                <TextView
+                    android:id="@+id/tv_damage1_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Damage"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
 
+                <TextView
+                    android:id="@+id/tv_shots1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_damage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0">
+                <TextView
+                    android:id="@+id/tv_shots2_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shots"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/tv_damage2_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Damage"
+                    android:layout_weight="0" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_shots2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_damage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1">
             <TextView
                 android:id="@+id/tv_melee_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Melee"
+                android:text="Melee to Hit"
                 android:layout_weight="0" />
 
             <TextView
@@ -296,6 +377,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_melee_damage_tag"
+                android:text="Damage"
+                android:layout_weight="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_melee_damage"
+                android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

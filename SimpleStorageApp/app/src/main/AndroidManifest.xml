@@ -23,9 +23,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.a5402technologies.pbagley.simplestorageapp.MainActivity" />
         </activity>
-        <activity android:name=".NewClassActivity" />
-        <activity android:name=".CharacterActivity" />
-        <activity android:name=".GearActivity"></activity>
+        <activity android:name=".CharacterClass.NewClassActivity" />
+        <activity android:name=".Character.CharacterActivity" />
+        <activity android:name=".Gear.GearActivity"></activity>
     </application>
 
 </manifest>

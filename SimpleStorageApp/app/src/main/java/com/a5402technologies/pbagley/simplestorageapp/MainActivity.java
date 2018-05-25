@@ -16,11 +16,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d(msg, "The onCreate() event");
 
         final Button btn_create = findViewById(R.id.btn_create);
-        btn_create.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        btn_create.setOnClickListener((View v) -> {
                 Intent CreateMenuActivity = new Intent(v.getContext(), CreateMenuActivity.class);
                 startActivity(CreateMenuActivity);
-            }
         });
 
 

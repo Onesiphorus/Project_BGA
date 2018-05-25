@@ -5,6 +5,7 @@ public class RangedWeapon extends GearBase {
     private Integer damageBonus;
     private Integer shots;
     private Integer range;
+    private Boolean twoHanded;
 
     public RangedWeapon(String name) {
         super(name);

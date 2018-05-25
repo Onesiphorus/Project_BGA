@@ -4,6 +4,7 @@ public class MeleeWeapon extends GearBase {
     private Integer combat;
     private Integer damageBonus;
     private Integer damageDie;
+    private Boolean twoHanded;
 
     public MeleeWeapon(String name) {
         super(name);

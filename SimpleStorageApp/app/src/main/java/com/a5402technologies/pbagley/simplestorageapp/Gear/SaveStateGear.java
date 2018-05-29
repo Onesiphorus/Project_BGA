@@ -16,7 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SaveStateGear implements Serializable {
-    static public List<GearBase> ccs = new ArrayList<GearBase>();
+    static public List<GearBase> gbs = new ArrayList<>();
+    static public List<MeleeWeapon>  mws = new ArrayList<>();
+    static public List<RangedWeapon> rws = new ArrayList<>();
+    static public List<Clothing> cs = new ArrayList<>();
     static SaveStateGear instance = null;
 
     public static SaveStateGear getInstance() {

@@ -308,4 +308,99 @@ public class Character implements Serializable {
 
     }
 
+    public Boolean getFace() {
+        return face;
+    }
+
+    public void setFace(Boolean face) {
+        this.face = face;
+    }
+
+    public Boolean getHat() {
+        return hat;
+    }
+
+    public void setHat(Boolean hat) {
+        this.hat = hat;
+    }
+
+    public Boolean getShoulders() {
+        return shoulders;
+    }
+
+    public void setShoulders(Boolean shoulders) {
+        this.shoulders = shoulders;
+    }
+
+    public Boolean getTorso() {
+        return torso;
+    }
+
+    public void setTorso(Boolean torso) {
+        this.torso = torso;
+    }
+
+    public Boolean getGloves() {
+        return gloves;
+    }
+
+    public void setGloves(Boolean gloves) {
+        this.gloves = gloves;
+    }
+
+    public Boolean getPants() {
+        return pants;
+    }
+
+    public void setPants(Boolean pants) {
+        this.pants = pants;
+    }
+
+    public Boolean getBoots() {
+        return boots;
+    }
+
+    public void setBoots(Boolean boots) {
+        this.boots = boots;
+    }
+
+    public Boolean getCoat() {
+        return coat;
+    }
+
+    public void setCoat(Boolean coat) {
+        this.coat = coat;
+    }
+
+    public Boolean getlHand() {
+        return lHand;
+    }
+
+    public void setlHand(Boolean lHand) {
+        this.lHand = lHand;
+    }
+
+    public Boolean getrHand() {
+        return rHand;
+    }
+
+    public void setrHand(Boolean rHand) {
+        this.rHand = rHand;
+    }
+
+    public Boolean getHasPTail() {
+        return hasPTail;
+    }
+
+    public void setHasPTail(Boolean hasPTail) {
+        this.hasPTail = hasPTail;
+    }
+
+    public Boolean getpTail() {
+        return pTail;
+    }
+
+    public void setpTail(Boolean pTail) {
+        this.pTail = pTail;
+    }
 }

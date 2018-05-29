@@ -25,7 +25,7 @@ public class SaveStateCharacter implements Serializable {
     public static void saveData(SaveStateCharacter instance) {
         ObjectOutput out;
         try {
-            File outFile = new File(Environment.getExternalStorageDirectory(), "appSaveState.data");
+            File outFile = new File(Environment.getExternalStorageDirectory(), "appSaveStateCharacter.data");
             out = new ObjectOutputStream(new FileOutputStream(outFile));
             out.writeObject(instance);
             out.close();
@@ -38,7 +38,7 @@ public class SaveStateCharacter implements Serializable {
         ObjectInput in;
         SaveStateCharacter ss = null;
         try {
-            in = new ObjectInputStream(new FileInputStream("appSaveState.data"));
+            in = new ObjectInputStream(new FileInputStream("appSaveStateCharacter.data"));
             ss=(SaveStateCharacter) in.readObject();
             in.close();
         } catch (Exception e) {

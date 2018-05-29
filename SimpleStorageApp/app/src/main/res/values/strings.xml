@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">SimpleStorageApp</string>
+    <string name="app_name">Shadows Of Brimtone Companion</string>
+    <string name="agility_label">Agility</string>
+    <string name="cunning_label">Cunning</string>
+    <string name="spirit_label">Spirit</string>
+    <string name="strength_label">Strength</string>
+    <string name="lore_label">Lore</string>
+    <string name="luck_label">Luck</string>
+    <string name="name_label">Name</string>
+    <string name="class_label">Class</string>
+    <string name="init_label">Initiative</string>
+    <string name="max_grit_label">Max Grit</string>
+    <string name="health_label">Health</string>
+    <string name="defense_label">Defense</string>
+    <string name="armor_label">Armor</string>
+    <string name="sanity_label">Sanity</string>
+    <string name="willpower_label">Willpower</string>
+    <string name="sp_armor_label">Spirit Armor</string>
+    <string name="ranged_to_hit_label">Ranged to Hit</string>
+    <string name="shots_label">Shots</string>
+    <string name="damage_label">Damage</string>
+    <string name="melee_to_hit_label">Melee to Hit</string>
+    <string name="combat_label">Combat</string>
+    <string name="equip_label">Equip</string>
+    <string name="weapons_label">Weapons</string>
+    <string name="items_label">Items</string>
+    <string name="side_bag_label">Side Bag</string>
+    <string name="conditions_label">Conditions</string>
+    <string name="back_label">Back</string>
 </resources>

@@ -18,7 +18,7 @@
                 android:id="@+id/tv_name_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/name_label"
                 android:layout_weight="0"
                 android:gravity="start"/>
 
@@ -32,7 +32,7 @@
                 android:id="@+id/tv_class_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Class"
+                android:text="@string/class_label"
                 android:layout_weight="0"/>
 
             <TextView
@@ -45,7 +45,7 @@
                 android:id="@+id/tv_init_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Initiative"
+                android:text="@string/init_label"
                 android:layout_weight="0" />
             <TextView
                 android:id="@+id/tv_init"
@@ -56,7 +56,7 @@
                 android:id="@+id/tv_max_grit_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Max Grit"
+                android:text="@string/max_grit_label"
                 android:layout_weight="0"/>
             <TextView
                 android:id="@+id/tv_max_grit"
@@ -76,7 +76,7 @@
                 android:id="@+id/tv_agility_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Agility"
+                android:text="@string/agility_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -89,7 +89,7 @@
                 android:id="@+id/tv_cunning_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cunning"
+                android:text="@string/cunning_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -102,7 +102,7 @@
                 android:id="@+id/tv_spirit_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spirit"
+                android:text="@string/spirit_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -122,7 +122,7 @@
                 android:id="@+id/tv_strength_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Strength"
+                android:text="@string/strength_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -135,7 +135,7 @@
                 android:id="@+id/tv_lore_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lore"
+                android:text="@string/lore_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -148,7 +148,7 @@
                 android:id="@+id/tv_luck_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Luck"
+                android:text="@string/luck_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -170,7 +170,7 @@
                 android:id="@+id/tv_health_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Health"
+                android:text="@string/health_label"
                 android:layout_weight="0"/>
 
             <TextView
@@ -183,7 +183,7 @@
                 android:id="@+id/tv_defense_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Defense"
+                android:text="@string/defense_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -196,7 +196,7 @@
                 android:id="@+id/tv_armor_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Armor"
+                android:text="@string/armor_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -215,7 +215,7 @@
                 android:id="@+id/tv_sanity_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sanity"
+                android:text="@string/sanity_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -228,7 +228,7 @@
                 android:id="@+id/tv_willpower_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Willpower"
+                android:text="@string/willpower_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -241,7 +241,7 @@
                 android:id="@+id/tv_spiritarmor_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SpArmor"
+                android:text="@string/sp_armor_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -260,7 +260,7 @@
                 android:id="@+id/tv_ranged_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ranged to Hit"
+                android:text="@string/ranged_to_hit_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -277,14 +277,14 @@
                     android:id="@+id/tv_shots1_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shots"
+                    android:text="@string/shots_label"
                     android:layout_weight="0" />
 
                 <TextView
                     android:id="@+id/tv_damage1_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Damage"
+                    android:text="@string/damage_label"
                     android:layout_weight="0" />
             </LinearLayout>
 
@@ -315,14 +315,14 @@
                     android:id="@+id/tv_shots2_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shots"
+                    android:text="@string/shots_label"
                     android:layout_weight="0" />
 
                 <TextView
                     android:id="@+id/tv_damage2_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Damage"
+                    android:text="@string/damage_label"
                     android:layout_weight="0" />
             </LinearLayout>
             <LinearLayout
@@ -356,7 +356,7 @@
                 android:id="@+id/tv_melee_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Melee to Hit"
+                android:text="@string/melee_to_hit_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -369,7 +369,7 @@
                 android:id="@+id/tv_combat_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Combat"
+                android:text="@string/combat_label"
                 android:layout_weight="0" />
 
             <TextView
@@ -381,7 +381,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_melee_damage_tag"
-                android:text="Damage"
+                android:text="@string/damage_label"
                 android:layout_weight="0"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -399,42 +399,42 @@
                 android:id="@+id/btn_equip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Equip"
+                android:text="@string/equip_label"
                 android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_weapons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Weapons"
+                android:text="@string/weapons_label"
                 android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_items"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Items"
+                android:text="@string/items_label"
                 android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_sidebag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Side Bag"
+                android:text="@string/side_bag_label"
                 android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_effects"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Effects"
+                android:text="@string/conditions_label"
                 android:layout_weight="1" />
 
             <Button
                 android:id="@+id/btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Back"
+                android:text="@string/back_label"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>

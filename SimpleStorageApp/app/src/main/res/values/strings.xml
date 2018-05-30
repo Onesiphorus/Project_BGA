@@ -27,4 +27,7 @@
     <string name="side_bag_label">Side Bag</string>
     <string name="conditions_label">Conditions</string>
     <string name="back_label">Back</string>
+    <string name="new_label">New</string>
+    <string name="load_label">Load</string>
+    <string name="main_menu_labvel">Main Menu</string>
 </resources>

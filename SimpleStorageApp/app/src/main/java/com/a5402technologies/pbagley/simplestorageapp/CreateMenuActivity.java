@@ -23,9 +23,9 @@ public class CreateMenuActivity extends AppCompatActivity{
         setContentView(R.layout.create_menu);
         Log.d(msg, "The onCreate() event");
 
-        SaveStateCharacterClass sscc = new SaveStateCharacterClass();
+        SaveStateCharacterClass saveStateCharacterClass = new SaveStateCharacterClass();
 
-        sscc = sscc.loadData();
+        saveStateCharacterClass = saveStateCharacterClass.loadData();
 
         final Button btn_new_class = findViewById(R.id.btn_new_class);
         btn_new_class.setOnClickListener((View v) -> {
@@ -35,8 +35,8 @@ public class CreateMenuActivity extends AppCompatActivity{
 
         LinearLayout buttonContainer = findViewById(R.id.buttonContainer);
 
-        if(null != sscc) {
-            List<CharacterClass> classes = sscc.getClasses();
+        if(null != saveStateCharacterClass) {
+            List<CharacterClass> classes = saveStateCharacterClass.getClasses();
             for(int i = 0; i < classes.size(); i++) {
                 Button btn = new Button(this);
                 btn.setText(classes.get(i).getClassName());

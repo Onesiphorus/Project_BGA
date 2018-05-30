@@ -1,4 +1,4 @@
-package com.a5402technologies.pbagley.simplestorageapp.Gear;
+package com.a5402technologies.pbagley.simplestorageapp.Gear.Models;
 
 public class MeleeWeapon extends GearBase {
     private Integer combat = 0;

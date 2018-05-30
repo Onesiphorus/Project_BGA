@@ -1,30 +1,30 @@
-package com.a5402technologies.pbagley.simplestorageapp.Gear;
+package com.a5402technologies.pbagley.simplestorageapp.Gear.Models;
 
 import java.util.List;
 
 public class GearBase {
     private String name;
-    private Integer cost = 0;
-    private Integer sell = 0;
-    private Integer weight = 0;
-    private Integer darkStone = 0;
-    private Integer agilityBonus = 0;
-    private Integer cunningBonus = 0;
-    private Integer spiritBonus = 0;
-    private Integer strengthBonus = 0;
-    private Integer loreBonus = 0;
-    private Integer luckBonus = 0;
-    private Integer healthBonus = 0;
-    private Integer sanityBonus = 0;
-    private Integer initiativeBonus = 0;
-    private List<String> restrictions = null;
+    private Integer cost;
+    private Integer sell;
+    private Integer weight;
+    private Integer darkStone;
+    private Integer agilityBonus;
+    private Integer cunningBonus;
+    private Integer spiritBonus;
+    private Integer strengthBonus;
+    private Integer loreBonus;
+    private Integer luckBonus;
+    private Integer healthBonus;
+    private Integer sanityBonus;
+    private Integer initiativeBonus;
+    private List<String> restrictions;
 
     public GearBase(String name) {
         this.name = name;
     }
 
     public String getName() {
-        return name;
+        return null == name ? "noName" : name;
     }
 
     public void setName(String name) {
@@ -32,7 +32,7 @@ public class GearBase {
     }
 
     public Integer getCost() {
-        return cost;
+        return null == cost ? 0 : cost;
     }
 
     public void setCost(Integer cost) {
@@ -40,7 +40,7 @@ public class GearBase {
     }
 
     public Integer getSell() {
-        return sell;
+        return null == sell ? 0 : sell;
     }
 
     public void setSell(Integer sell) {
@@ -48,7 +48,7 @@ public class GearBase {
     }
 
     public Integer getWeight() {
-        return weight;
+        return null == weight ? 0 : weight;
     }
 
     public void setWeight(Integer weight) {
@@ -56,7 +56,7 @@ public class GearBase {
     }
 
     public Integer getDarkStone() {
-        return darkStone;
+        return null == darkStone ? 0 : darkStone;
     }
 
     public void setDarkStone(Integer darkStone) {
@@ -64,7 +64,7 @@ public class GearBase {
     }
 
     public Integer getAgilityBonus() {
-        return agilityBonus;
+        return null == agilityBonus ? 0 : agilityBonus;
     }
 
     public void setAgilityBonus(Integer agilityBonus) {
@@ -72,7 +72,7 @@ public class GearBase {
     }
 
     public Integer getCunningBonus() {
-        return cunningBonus;
+        return null == cunningBonus ? 0 : cunningBonus;
     }
 
     public void setCunningBonus(Integer cunningBonus) {
@@ -80,7 +80,7 @@ public class GearBase {
     }
 
     public Integer getSpiritBonus() {
-        return spiritBonus;
+        return null == spiritBonus ? 0 : spiritBonus;
     }
 
     public void setSpiritBonus(Integer spiritBonus) {
@@ -88,7 +88,7 @@ public class GearBase {
     }
 
     public Integer getStrengthBonus() {
-        return strengthBonus;
+        return null == strengthBonus ? 0 : strengthBonus;
     }
 
     public void setStrengthBonus(Integer strengthBonus) {
@@ -96,7 +96,7 @@ public class GearBase {
     }
 
     public Integer getLoreBonus() {
-        return loreBonus;
+        return null == loreBonus ? 0 : loreBonus;
     }
 
     public void setLoreBonus(Integer loreBonus) {
@@ -104,7 +104,7 @@ public class GearBase {
     }
 
     public Integer getLuckBonus() {
-        return luckBonus;
+        return null == luckBonus ? 0 : luckBonus;
     }
 
     public void setLuckBonus(Integer luckBonus) {
@@ -112,7 +112,7 @@ public class GearBase {
     }
 
     public Integer getHealthBonus() {
-        return healthBonus;
+        return null == healthBonus ? 0 : healthBonus;
     }
 
     public void setHealthBonus(Integer healthBonus) {
@@ -120,7 +120,7 @@ public class GearBase {
     }
 
     public Integer getSanityBonus() {
-        return sanityBonus;
+        return null == sanityBonus ? 0 : sanityBonus;
     }
 
     public void setSanityBonus(Integer sanityBonus) {
@@ -128,7 +128,7 @@ public class GearBase {
     }
 
     public Integer getInitiativeBonus() {
-        return initiativeBonus;
+        return null == initiativeBonus ? 0 : initiativeBonus;
     }
 
     public void setInitiativeBonus(Integer initiativeBonus) {
@@ -136,7 +136,14 @@ public class GearBase {
     }
 
     public List<String> getRestrictions() {
+        if (null == restrictions) {
+            restrictions.add("None");
+        }
         return restrictions;
+    }
+
+    public void addRestriction(String r) {
+        this.restrictions.add(r);
     }
 
     public void setRestrictions(List<String> restrictions) {

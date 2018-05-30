@@ -2,10 +2,10 @@ package com.a5402technologies.pbagley.simplestorageapp.Character;
 
 
 import com.a5402technologies.pbagley.simplestorageapp.CharacterClass.CharacterClass;
-import com.a5402technologies.pbagley.simplestorageapp.Gear.Clothing;
-import com.a5402technologies.pbagley.simplestorageapp.Gear.GearBase;
-import com.a5402technologies.pbagley.simplestorageapp.Gear.MeleeWeapon;
-import com.a5402technologies.pbagley.simplestorageapp.Gear.RangedWeapon;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.Clothing;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.GearBase;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.MeleeWeapon;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.RangedWeapon;
 
 import java.io.Serializable;
 import java.util.List;

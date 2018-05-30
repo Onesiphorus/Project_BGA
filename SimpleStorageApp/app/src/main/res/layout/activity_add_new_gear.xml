@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gear.Activities.GearActivity">
+    tools:context="com.a5402technologies.pbagley.simplestorageapp.Gear.Activities.AddNewGearActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add New Gear"
-            android:id="@+id/btn_new_gear"/>
-    </LinearLayout>
 
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

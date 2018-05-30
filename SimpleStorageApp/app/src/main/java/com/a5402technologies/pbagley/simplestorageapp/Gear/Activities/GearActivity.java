@@ -1,4 +1,4 @@
-package com.a5402technologies.pbagley.simplestorageapp.Gear;
+package com.a5402technologies.pbagley.simplestorageapp.Gear.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

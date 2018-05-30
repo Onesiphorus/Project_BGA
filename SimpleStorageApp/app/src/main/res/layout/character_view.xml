@@ -19,14 +19,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/name_label"
-                android:layout_weight="0"
                 android:gravity="start"/>
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="3" />
+                android:layout_weight="3"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tv_class_tag"
@@ -39,7 +39,8 @@
                 android:id="@+id/tv_class"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tv_init_tag"
@@ -51,7 +52,8 @@
                 android:id="@+id/tv_init"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAlignment="center"/>
             <TextView
                 android:id="@+id/tv_max_grit_tag"
                 android:layout_width="wrap_content"
@@ -62,193 +64,250 @@
                 android:id="@+id/tv_max_grit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAlignment="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="3"
+            android:weightSum="6"
             android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/tv_agility_tag"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/agility_label"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_agility_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agility_label"
+                    android:textAlignment="center" />
 
-            <TextView
-                android:id="@+id/tv_agility"
+                <TextView
+                    android:id="@+id/tv_agility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_cunning_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cunning_label"
+                    android:textAlignment="center" />
 
-            <TextView
-                android:id="@+id/tv_cunning_tag"
+                <TextView
+                    android:id="@+id/tv_cunning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cunning_label"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_spirit_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spirit_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_cunning"
+                <TextView
+                    android:id="@+id/tv_spirit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_strength_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strength_label"
+                    android:textAlignment="center" />
 
-            <TextView
-                android:id="@+id/tv_spirit_tag"
+                <TextView
+                    android:id="@+id/tv_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/spirit_label"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_lore_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lore_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_spirit"
+                <TextView
+                    android:id="@+id/tv_lore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_luck_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luck_label"
+                    android:textAlignment="center"/>
 
+                <TextView
+                    android:id="@+id/tv_luck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/tv_strength_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/strength_label"
-                android:layout_weight="0" />
-
-            <TextView
-                android:id="@+id/tv_strength"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_lore_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lore_label"
-                android:layout_weight="0" />
-
-            <TextView
-                android:id="@+id/tv_lore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_luck_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/luck_label"
-                android:layout_weight="0" />
-
-            <TextView
-                android:id="@+id/tv_luck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
+            android:weightSum="6"
             android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/tv_health_tag"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health_label"
-                android:layout_weight="0"/>
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/tv_health"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/tv_health_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_defense_tag"
+                <TextView
+                    android:id="@+id/tv_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/defense_label"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/tv_defense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/tv_defense_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defense_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_armor_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/armor_label"
-                android:layout_weight="0" />
+                <TextView
+                    android:id="@+id/tv_defense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_armor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/tv_sanity_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sanity_label"
-                android:layout_weight="0" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_sanity"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_armor_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/armor_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_willpower_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/willpower_label"
-                android:layout_weight="0" />
+                <TextView
+                    android:id="@+id/tv_armor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_willpower"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_sanity_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sanity_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_spiritarmor_tag"
+                <TextView
+                    android:id="@+id/tv_sanity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sp_armor_label"
-                android:layout_weight="0" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_willpower_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/willpower_label"
+                    android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/tv_sparmor"
+                <TextView
+                    android:id="@+id/tv_willpower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_spiritarmor_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_armor_label"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tv_sparmor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

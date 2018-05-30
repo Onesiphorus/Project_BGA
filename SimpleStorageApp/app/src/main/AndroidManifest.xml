@@ -25,9 +25,10 @@
         </activity>
         <activity android:name=".CharacterClass.NewClassActivity" />
         <activity android:name=".Character.CharacterActivity" />
-        <activity android:name=".Gear.GearActivity" />
-        <activity android:name=".Gear.ClothingActivity" />
-        <activity android:name=".Gear.WeaponActivity"></activity>
+        <activity android:name=".Gear.Activities.GearActivity" />
+        <activity android:name=".Gear.Activities.ClothingActivity" />
+        <activity android:name=".Gear.Activities.WeaponActivity" />
+        <activity android:name=".Gear.Activities.AddNewGearActivity"></activity>
     </application>
 
 </manifest>

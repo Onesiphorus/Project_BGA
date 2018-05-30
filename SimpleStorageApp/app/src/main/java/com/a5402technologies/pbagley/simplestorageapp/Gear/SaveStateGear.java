@@ -2,7 +2,10 @@ package com.a5402technologies.pbagley.simplestorageapp.Gear;
 
 import android.os.Environment;
 
-import com.a5402technologies.pbagley.simplestorageapp.Gear.GearBase;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.Clothing;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.GearBase;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.MeleeWeapon;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.RangedWeapon;
 
 import java.io.File;
 import java.io.FileInputStream;

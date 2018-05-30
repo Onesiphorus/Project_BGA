@@ -1,4 +1,4 @@
-package com.a5402technologies.pbagley.simplestorageapp.Gear;
+package com.a5402technologies.pbagley.simplestorageapp.Gear.Models;
 
 public class RangedWeapon extends GearBase {
     private Integer damageDie = 6;
@@ -41,5 +41,13 @@ public class RangedWeapon extends GearBase {
 
     public void setRange(Integer range) {
         this.range = range;
+    }
+
+    public Boolean getTwoHanded() {
+        return twoHanded;
+    }
+
+    public void setTwoHanded(Boolean twoHanded) {
+        this.twoHanded = twoHanded;
     }
 }

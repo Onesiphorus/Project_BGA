@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.a5402technologies.pbagley.simplestorageapp.CharacterClass.CharacterClass;
-import com.a5402technologies.pbagley.simplestorageapp.Gear.GearActivity;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Activities.GearActivity;
 import com.a5402technologies.pbagley.simplestorageapp.R;
 
 public class CharacterActivity extends AppCompatActivity {

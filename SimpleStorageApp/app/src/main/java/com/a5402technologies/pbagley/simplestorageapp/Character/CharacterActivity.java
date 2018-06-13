@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.a5402technologies.pbagley.simplestorageapp.CharacterClass.CharacterClass;
 import com.a5402technologies.pbagley.simplestorageapp.Gear.Activities.GearActivity;
+import com.a5402technologies.pbagley.simplestorageapp.Gear.Models.Clothing;
 import com.a5402technologies.pbagley.simplestorageapp.R;
 
 public class CharacterActivity extends AppCompatActivity {
@@ -27,7 +28,15 @@ public class CharacterActivity extends AppCompatActivity {
         final Character character = new Character("Test", characterClass);
         ((TextView)findViewById(R.id.tv_name)).setText(character.getCharacterName());
         ((TextView)findViewById(R.id.tv_class)).setText(character.getCharacterClass().getClassName());
-        ((TextView)findViewById(R.id.tv_init)).setText(character.getInitiative().toString());
+        Integer initiativeBase = character.getInitiative();
+        Integer initiativeModifiers = 0;
+        if(character.getClothing() != null) {
+            for (Clothing clothing : character.getClothing())
+                initiativeModifiers += clothing.getEquipped() ? clothing.getInitiativeBonus() : 0;
+        }
+        Integer initiativeFinal = initiativeBase + initiativeModifiers;
+        ((TextView)findViewById(R.id.tv_init)).setText(initiativeFinal.toString());
+
         ((TextView)findViewById(R.id.tv_max_grit)).setText(character.getMaxGrit().toString());
         ((TextView)findViewById(R.id.tv_agility)).setText(character.getAgility().toString());
         ((TextView)findViewById(R.id.tv_cunning)).setText(character.getCunning().toString());

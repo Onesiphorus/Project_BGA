@@ -14,6 +14,9 @@ public class Character implements Serializable {
     private String characterName;
     private CharacterClass characterClass;
     private List<GearBase> gear;
+    private List<Clothing> clothing;
+    private List<MeleeWeapon> meleeWeapons;
+    private List<RangedWeapon> rangedWeapons;
     private Integer agilityBonus = 0;
     private Integer cunningBonus = 0;
     private Integer spiritBonus = 0;
@@ -29,6 +32,31 @@ public class Character implements Serializable {
     private Integer meleeDamageBonus = 0;
     private Integer meleeDamageDie = 6;
     private Integer combatBonus = 0;
+
+    public List<Clothing> getClothing() {
+        return clothing;
+    }
+
+    public void setClothing(List<Clothing> clothing) {
+        this.clothing = clothing;
+    }
+
+    public List<MeleeWeapon> getMeleeWeapons() {
+        return meleeWeapons;
+    }
+
+    public void setMeleeWeapons(List<MeleeWeapon> meleeWeapons) {
+        this.meleeWeapons = meleeWeapons;
+    }
+
+    public List<RangedWeapon> getRangedWeapons() {
+        return rangedWeapons;
+    }
+
+    public void setRangedWeapons(List<RangedWeapon> rangedWeapons) {
+        this.rangedWeapons = rangedWeapons;
+    }
+
     private Integer initiativeBonus = 0;
     private Integer maxGritBonus = 0;
     private Integer gold = 0;

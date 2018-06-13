@@ -10,9 +10,27 @@ public class Clothing extends GearBase {
     private Boolean pants = false;
     private Boolean boots = false;
     private Boolean coat = false;
+    private Boolean equipped = false;
 
-    Clothing(String name) {
+    public Boolean getEquipped() {
+        return equipped;
+    }
+
+    public void setEquipped(Boolean equipped) {
+        this.equipped = equipped;
+    }
+
+    Clothing(String name, Boolean face, Boolean hat, Boolean shoulders, Boolean torso, Boolean gloves,
+             Boolean pants, Boolean boots, Boolean coat) {
         super(name);
+        this.setFace(face);
+        this.setHat(hat);
+        this.setShoulders(shoulders);
+        this.setTorso(torso);
+        this.setGloves(gloves);
+        this.setPants(pants);
+        this.setBoots(boots);
+        this.setCoat(coat);
     }
 
     public Boolean getFace() {

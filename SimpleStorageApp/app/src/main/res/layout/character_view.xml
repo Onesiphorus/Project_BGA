@@ -75,7 +75,7 @@
             android:weightSum="6"
             android:layout_weight="1">
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -93,7 +93,7 @@
                     android:textAlignment="center" />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -112,7 +112,7 @@
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -130,7 +130,7 @@
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -149,7 +149,7 @@
 
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -168,7 +168,7 @@
 
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -196,7 +196,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -215,7 +215,7 @@
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -236,7 +236,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -255,7 +255,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -273,7 +273,7 @@
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -291,7 +291,7 @@
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
@@ -320,13 +320,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ranged_to_hit_label"
-                android:layout_weight="0" />
+                android:layout_weight="0"/>
 
             <TextView
                 android:id="@+id/tv_ranged"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAlignment="center"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -357,19 +358,21 @@
                     android:id="@+id/tv_shots1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/tv_damage1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="0">
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/tv_shots2_tag"
                     android:layout_width="wrap_content"
@@ -382,7 +385,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/damage_label"
-                    android:layout_weight="0" />
+                    android:layout_weight="1" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -394,13 +397,15 @@
                     android:id="@+id/tv_shots2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/tv_damage2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
 
@@ -409,44 +414,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="4"
+            android:weightSum="6"
             android:layout_weight="1">
             <TextView
                 android:id="@+id/tv_melee_tag"
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:text="@string/melee_to_hit_label"
-                android:layout_weight="0" />
+                android:layout_weight="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/tv_melee"
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/tv_combat_tag"
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:text="@string/combat_label"
-                android:layout_weight="0" />
+                android:layout_weight="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/tv_combat"
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAlignment="center" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_melee_damage_tag"
                 android:text="@string/damage_label"
-                android:layout_weight="0"/>
+                android:layout_weight="1"
+                android:textAlignment="center" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_melee_damage"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:textAlignment="center"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
